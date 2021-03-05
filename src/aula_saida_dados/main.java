@@ -6,7 +6,7 @@ public class main {
 
         calculo  n = new calculo();
 
-
+        DadosCliente cliente = new DadosCliente();
         n.setX(10.97986);
 
         System.out.println(n.getX());
@@ -16,5 +16,11 @@ public class main {
         System.out.printf("%.3f\n" , n.getX());
         System.out.printf("Resultado = %.2f metros quadrados\n" , n.getX());
 
+        cliente.setNome("Rita");
+        cliente.setIdade(45);
+        cliente.setRenda(4000.00);
+
+        System.out.printf("%s tem %d anos e ganha R$%.2f reais por mês",cliente.getNome(),
+                cliente.getIdade(), cliente.getRenda() );
     }
 }
